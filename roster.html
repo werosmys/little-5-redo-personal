@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/ids.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <title>Gallery Page Draft</title>
+</head>
+
+<body>
+    <nav>
+        <a class="logo" href="http://idsnews.com" target="_blank" rel="noopener noreferrer">IDS</a>
+        <ol>
+            <li><a href="index.html">Home</a></li>
+            <!-- done -->
+            <li><a href="about.html">About the Race</a></li>
+            <!-- done -->
+            <!-- <li><a href="updates.html">Live Updates</a></li> -->
+            <!-- do we need a live updates page? -->
+            <li><a href="roster.html">Team Rosters</a></li>
+            <!-- done -->
+            <li><a href="sports.html">Track Coverage</a></li>
+            <!-- done -->
+            <li><a href="gallery.html">Little 5 Gallery</a></li>
+            <!-- need to fix image sizes -->
+        </ol>
+    </nav>
+    <header>
+        <div class="headline-container roster-img"></div>
+        <div class="black-box">
+            <h1>Team Rosters</h1>
+            <h2>Know where your team is on the track</h2>
+        </div>
+    </header>
+    <main>
+        <article class="team-rosters">
+            <!-- check these to make sure they are up to date -->
+            <div class="womens">
+                <h4>Women's Teams</h4>
+                <div class="acc-menu">
+                    <button class="accordion accordion-button">Row 1 (Alpha Chi Omega, Teter, Kappa Alpha
+                        Theta)</button>
+                    <div class="panel">
+                        <p class="bold team-name">Alpha Chi Omega</p>
+                        <div class="small-flex">
+                            <img src="/images/shirt-icon.png" alt="Shirt icon" class="shirt-icon">
+                            <div class="flex-text">
+                                <p>Qualifying time: time...</p>
+                                <p>Riders: Jane Doe, Anna Doe, Maggie Doe</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="accordion accordion-button">Row 1 (Alpha Chi Omega, Teter, Kappa Alpha
+                        Theta)</button>
+                    <div class="panel">
+                        <p class="bold team-name">Alpha Chi Omega</p>
+                        <div class="small-flex">
+                            <img src="/images/shirt-icon.png" alt="Shirt icon" class="shirt-icon">
+                            <div class="flex-text">
+                                <p>Qualifying time: time...</p>
+                                <p>Riders: Jane Doe, Anna Doe, Maggie Doe</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="accordion accordion-button">Row 1 (Alpha Chi Omega, Teter, Kappa Alpha
+                        Theta)</button>
+                    <div class="panel">
+                        <p class="bold team-name">Alpha Chi Omega</p>
+                        <div class="small-flex">
+                            <img src="/images/shirt-icon.png" alt="Shirt icon" class="shirt-icon">
+                            <div class="flex-text">
+                                <p>Qualifying time: time...</p>
+                                <p>Riders: Jane Doe, Anna Doe, Maggie Doe</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mens">
+                <h4>Men's Teams</h4>
+                <div class="acc-menu">
+                    <button class="accordion accordion-button">Row 1 (Alpha Chi Omega, Teter, Kappa Alpha
+                        Theta)</button>
+                    <div class="panel">
+                        <p class="bold team-name">Alpha Chi Omega</p>
+                        <div class="small-flex">
+                            <img src="/images/shirt-icon.png" alt="Shirt icon" class="shirt-icon">
+                            <div class="flex-text">
+                                <p>Qualifying time: time...</p>
+                                <p>Riders: Jane Doe, Anna Doe, Maggie Doe</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="accordion accordion-button">Row 1 (Alpha Chi Omega, Teter, Kappa Alpha
+                        Theta)</button>
+                    <div class="panel">
+                        <p class="bold team-name">Alpha Chi Omega</p>
+                        <div class="small-flex">
+                            <img src="/images/shirt-icon.png" alt="Shirt icon" class="shirt-icon">
+                            <div class="flex-text">
+                                <p>Qualifying time: time...</p>
+                                <p>Riders: Jane Doe, Anna Doe, Maggie Doe</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="accordion accordion-button">Row 1 (Alpha Chi Omega, Teter, Kappa Alpha
+                        Theta)</button>
+                    <div class="panel">
+                        <p class="bold team-name">Alpha Chi Omega</p>
+                        <div class="small-flex">
+                            <img src="/images/shirt-icon.png" alt="Shirt icon" class="shirt-icon">
+                            <div class="flex-text">
+                                <p>Qualifying time: time...</p>
+                                <p>Riders: Jane Doe, Anna Doe, Maggie Doe</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+    </main>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
