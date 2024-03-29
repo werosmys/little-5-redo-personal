@@ -19,16 +19,18 @@
         <ol>
             <li><a href="index.html">Home</a></li>
             <!-- done -->
-            <li><a href="about.html">About the Race</a></li>
+            <li><a href="about/index.html">About the Race</a></li>
             <!-- done -->
-            <!-- <li><a href="updates.html">Live Updates</a></li> -->
-            <!-- do we need a live updates page? -->
-            <li><a href="roster.html">Team Rosters</a></li>
+            <li><a href="photos/index.html">Photos</a></li>
+            <!-- photo page Jacob wanted -->
+            <li><a href="roster/index.html">Team Rosters</a></li>
             <!-- done -->
-            <li><a href="sports.html">Track Coverage</a></li>
+            <li><a href="sports/index.html">Track Coverage</a></li>
             <!-- done -->
-            <li><a href="gallery.html">Little 500 Gallery</a></li>
+            <!-- <li><a href="gallery.html">History</a></li> -->
+            <!-- historical gallery currently under review -->
             <!-- need to fix image sizes -->
+            <!-- need to do mobile styles -->
         </ol>
     </nav>
     <header>
@@ -36,6 +38,7 @@
         <div class="black-box">
             <h1>The Little 500 Guide</h1>
             <h2>Everything you need to know for the World's Greatest College Weekend</h2>
+            <p class="author">Photo by: Photographer Name</p>
         </div>
     </header>
     <div class="byline-bar">
@@ -46,15 +49,45 @@
     <main class="index-main">
         <article class="home-flex">
             <section>
-                <div class="box-link">
-                    <h3>Track Coverage</h3>
-                    <p class="blurb">Box blurb which tells you where you're going</p>
-                    <p class="button"><a href="sports.html">Read More</a></p>
+                <div class="story-box-lg story-box-home">
+                    <!-- This will be the quick-update blog post -->
+                    <img src="/images/cyclist-a.jpg" alt="Put something here" class="thumbnail">
+                    <div class="story-text-flex">
+                        <div class="title-pubdate">
+                            <p class="bold story-title"><a href="http://" target="_blank"
+                                    rel="noopener noreferrer">Little 500 Live Updates</a>
+                            </p>
+                            <p>April 19 (or 20)</p>
+                        </div>
+                        <div class="story-text">
+                            <p class="author">By <a href="http://" target="_blank" rel="noopener noreferrer">IDS
+                                    Staff</a></p>
+                            <p class="">Live updates from the track</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="box-link">
-                    <h3>Team Rosters</h3>
-                    <p class="blurb">Box blurb which tells you where you're going</p>
-                    <p class="button"><a href="roster.html">Read More</a></p>
+                <div class="photo-teaser-container">
+                    <div class="flex-text-teaser">
+                        <h3>Photos from the Track</h3>
+                        <p class="button"><a href="photos.html">See more &raquo;</a></p>
+                    </div>
+                    <div class="photo-teaser">
+                        <!-- There is definitely a way with javascript to have this be updated regularly with the most recent photos. 
+                        If Matei could figure that out it would be wonderful. For now I am using placeholders -->
+                        <div class="small-img-teaser">
+                            <img src="/images/cyclist-a.jpg" alt="Caption Text">
+                            <p class="credit">Photographer Name</p>
+                        </div>
+                        <div class="small-img-teaser">
+                            <img src="/images/cyclist-a.jpg" alt="Caption Text">
+                            <p class="credit">Photographer Name</p>
+                        </div>
+                        <div class="small-img-teaser">
+                            <img src="/images/cyclist-a.jpg" alt="Caption Text">
+                            <p class="credit">Photographer Name</p>
+                        </div>
+                        <!-- I think 3 most recent images is good enough -->
+                    </div>
                 </div>
             </section>
             <aside class="live-updates">

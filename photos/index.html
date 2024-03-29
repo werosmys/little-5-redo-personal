@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/ids.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <title>Gallery Page Draft</title>
+</head>
+
+<body>
+    <nav>
+        <a class="logo" href="http://idsnews.com" target="_blank" rel="noopener noreferrer">IDS</a>
+        <ol>
+            <li><a href="../index.html">Home</a></li>
+            <!-- done -->
+            <li><a href="../about/index.html">About the Race</a></li>
+            <!-- done -->
+            <li><a href="index.html">Photos</a></li>
+            <!-- photo page Jacob wanted -->
+            <li><a href="../roster/index.html">Team Rosters</a></li>
+            <!-- done -->
+            <li><a href="../sports/index.html">Track Coverage</a></li>
+            <!-- done -->
+            <!-- <li><a href="gallery.html">History</a></li> -->
+            <!-- historical gallery currently under review -->
+            <!-- need to fix image sizes -->
+            <!-- need to do mobile styles -->
+        </ol>
+    </nav>
+    <header>
+        <div class="headline-container gallery-img"></div>
+        <div class="black-box">
+            <h1>Little 500 Photos</h1>
+            <h2>Top shots from the track <!--, updated live --></h2>
+            <!-- Uncomment 'updated live' if we decide if it will actually be updated live -->
+            <p class="author">Photo by: Photographer Name</p>
+        </div>
+    </header>
+    <main class="photos-width">
+        <article class="gallery modern">
+            <div class="group">
+                <!-- Add new photos to the start, so the most recent photos are at the beginning of the page
+                    format: 
+                        <figure>
+                            <img src="source link" alt="caption text">
+                            <p class="credit">Photographer Name</p>
+                            <figcaption></figcaption>
+                        </figure>
+                        looking to see if autopopulating figc with alt text is easier
+                        ------------------------------------------------------------
+                        emmet string:
+                            fig>img+p.credit+figc
+                -->
+                <figure>
+                    <img src="../images/cyclist-a.jpg" alt="This is test caption text.">
+                    <!-- Set alt-text to caption text. there is definitely a way to make the 
+                        figcaption autopopulate (using js) with alt-text so we dont have to write the figc twice.
+                        If I write the JS it will be messy. Will consult.-->
+                    <p class="credit">Photographer Name</p>
+                    <figcaption>This is test caption text.</figcaption>
+                </figure>
+            </div>
+            <div class="group">
+
+                <figure>
+                    <img src="../images/cyclist-b.jpg" alt="This is test caption text.">
+                    <p class="credit">Photographer Name</p>
+                    <figcaption>This is test caption text.</figcaption>
+                </figure>
+            </div>
+            <div class="group">
+
+                <figure>
+                    <img src="../images/cyclist-c.webp" alt="This is test caption text.">
+                    <p class="credit">Photographer Name</p>
+                    <figcaption>This is test caption text.</figcaption>
+                </figure>
+            </div>
+            <div class="group">
+
+                <figure>
+                    <img src="../images/cyclist-c.webp" alt="This is test caption text.">
+                    <p class="credit">Photographer Name</p>
+                    <figcaption>This is test caption text.</figcaption>
+                </figure>
+            </div>
+            <div class="group">
+
+                <figure>
+                    <img src="../images/cyclist-a.jpg" alt="This is test caption text.">
+                    <p class="credit">Photographer Name</p>
+                    <figcaption>This is test caption text.</figcaption>
+                </figure>
+            </div>
+            <div class="group">
+
+                <figure>
+                    <img src="../images/cyclist-b.jpg" alt="This is test caption text.">
+                    <p class="credit">Photographer Name</p>
+                    <figcaption>This is test caption text.</figcaption>
+                </figure>
+            </div>
+        </article>
+    </main>
+</body>
+
+</html>

@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/ids.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/ids.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
@@ -17,18 +17,20 @@
     <nav>
         <a class="logo" href="http://idsnews.com" target="_blank" rel="noopener noreferrer">IDS</a>
         <ol>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="../index.html">Home</a></li>
             <!-- done -->
-            <li><a href="about.html">About the Race</a></li>
+            <li><a href="../about/index.html">About the Race</a></li>
             <!-- done -->
-            <!-- <li><a href="updates.html">Live Updates</a></li> -->
-            <!-- do we need a live updates page? -->
-            <li><a href="roster.html">Team Rosters</a></li>
+            <li><a href="../photos/index.html">Photos</a></li>
+            <!-- photo page Jacob wanted -->
+            <li><a href="../roster/index.html">Team Rosters</a></li>
             <!-- done -->
-            <li><a href="sports.html">Track Coverage</a></li>
+            <li><a href="index.html">Track Coverage</a></li>
             <!-- done -->
-            <li><a href="gallery.html">Little 500 Gallery</a></li>
+            <!-- <li><a href="gallery.html">History</a></li> -->
+            <!-- historical gallery currently under review -->
             <!-- need to fix image sizes -->
+            <!-- need to do mobile styles -->
         </ol>
     </nav>
     <header>
@@ -36,60 +38,27 @@
         <div class="black-box">
             <h1>Track Coverage</h1>
             <h2>Stories and results from the race</h2>
+            <p class="author">Photo by: Photographer Name</p>
         </div>
     </header>
     <main>
         <article class="home-flex">
             <section class="recent-updates">
                 <h3>Recent Updates</h3>
-                <div class="story-box">
-                    <img src="/images/cyclist-a.jpg" alt="Put something here" class="thumbnail">
+                <div class="story-box-lg">
+                    <!-- This will be the quick-update blog post -->
+                    <img src="../images/cyclist-a.jpg" alt="Put something here" class="thumbnail">
                     <div class="story-text-flex">
                         <div class="title-pubdate">
                             <p class="bold story-title"><a href="http://" target="_blank"
-                                    rel="noopener noreferrer">Story Title</a>
+                                    rel="noopener noreferrer">Little 500 Live Updates</a>
                             </p>
-                            <p>Pubdate</p>
+                            <p>April 19 (or 20)</p>
                         </div>
                         <div class="story-text">
-                            <p class="author">By <a href="http://" target="_blank" rel="noopener noreferrer">Author
-                                    Name</a></p>
-                            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aperiam
-                                tempora modi fugit aspernatur ad iusto.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="story-box">
-                    <img src="/images/cyclist-a.jpg" alt="Put something here" class="thumbnail">
-                    <div class="story-text-flex">
-                        <div class="title-pubdate">
-                            <p class="bold story-title"><a href="http://" target="_blank"
-                                    rel="noopener noreferrer">Story Title</a>
-                            </p>
-                            <p>Pubdate</p>
-                        </div>
-                        <div class="story-text">
-                            <p class="author">By <a href="http://" target="_blank" rel="noopener noreferrer">Author
-                                    Name</a></p>
-                            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aperiam
-                                tempora modi fugit aspernatur ad iusto.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="story-box">
-                    <img src="/images/cyclist-a.jpg" alt="Put something here" class="thumbnail">
-                    <div class="story-text-flex">
-                        <div class="title-pubdate">
-                            <p class="bold story-title"><a href="http://" target="_blank"
-                                    rel="noopener noreferrer">Story Title</a>
-                            </p>
-                            <p>Pubdate</p>
-                        </div>
-                        <div class="story-text">
-                            <p class="author">By <a href="http://" target="_blank" rel="noopener noreferrer">Author
-                                    Name</a></p>
-                            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aperiam
-                                tempora modi fugit aspernatur ad iusto.</p>
+                            <p class="author">By <a href="http://" target="_blank" rel="noopener noreferrer">IDS
+                                    Staff</a></p>
+                            <p class="">Live updates from the track</p>
                         </div>
                     </div>
                 </div>
@@ -106,7 +75,7 @@
         <article class="more-coverage">
             <h3>More Stories</h3>
             <div class="story-box">
-                <img src="/images/cyclist-a.jpg" alt="Put something here" class="thumbnail">
+                <img src="../images/cyclist-a.jpg" alt="Put something here" class="thumbnail">
                 <div class="story-text-flex">
                     <div class="title-pubdate">
                         <p class="bold story-title"><a href="http://" target="_blank" rel="noopener noreferrer">Story
@@ -123,7 +92,7 @@
                 </div>
             </div>
             <div class="story-box">
-                <img src="/images/cyclist-a.jpg" alt="Put something here" class="thumbnail">
+                <img src="../images/cyclist-a.jpg" alt="Put something here" class="thumbnail">
                 <div class="story-text-flex">
                     <div class="title-pubdate">
                         <p class="bold story-title"><a href="http://" target="_blank" rel="noopener noreferrer">Story
@@ -140,7 +109,7 @@
                 </div>
             </div>
             <div class="story-box">
-                <img src="/images/cyclist-a.jpg" alt="Put something here" class="thumbnail">
+                <img src="../images/cyclist-a.jpg" alt="Put something here" class="thumbnail">
                 <div class="story-text-flex">
                     <div class="title-pubdate">
                         <p class="bold story-title"><a href="http://" target="_blank" rel="noopener noreferrer">Story

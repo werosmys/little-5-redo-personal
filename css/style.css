@@ -28,7 +28,7 @@ nav {
     font-family: sans-serif;
     font-size: 16px;
     width: 100%;
-    background-color: var(--idsred);
+    background-color: rgba(0, 0, 0, 0.6);
     position: fixed;
     top: 0;
     left: 0;
@@ -64,7 +64,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #5f0000;
+    background-color: #990000;
     transition: background-color 0.5s ease;
 }
 
@@ -103,7 +103,7 @@ header {
     height: 300px;
     bottom: 0;
     left: 0;
-    background-color: #990000b6;
+    background-color: rgba(0, 0, 0, 0.6);
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -119,13 +119,21 @@ header {
 }
 
 .black-box h1 {
-    font-size: 120px;
+    font-size: 80px;
 }
 
 .black-box h2 {
-    font-size: 48px;
+    font-size: 38px;
     padding-left: 1em;
     padding-right: 1em;
+}
+
+.black-box p {
+    justify-self: flex-end;
+    align-self: flex-end;
+    padding-top: 6rem;
+    padding-right: 1rem;
+    color: var(--cream);
 }
 
 .byline-bar {
@@ -162,7 +170,6 @@ article {
     display: flex;
     flex-flow: row wrap;
     gap: 2rem;
-    column-count: 3;
 }
 
 img {
@@ -174,10 +181,13 @@ figure {
     padding: 0;
 }
 
-.group {
-    position: relative;
-}
+/* Below is all of the styling needed (roughly approximately maybe with some edits) 
+for the historical photo gallery (styled as polaroid photos) */
 
+/* .group {
+    position: relative;
+} */
+/* 
 .year {
     position: absolute;
     top: 10px;
@@ -186,28 +196,55 @@ figure {
     font-size: 24px;
     font-family: 'Caveat', cursive;
     text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
-}
+} */
 
-.credit {
+/* .credit {
     position: absolute;
     bottom: 10px;
     right: 15px;
     color: var(--gray60);
     font-size: 20px;
     /* border: 1px solid red; */
-    font-family: 'Caveat', cursive;
-}
+/* font-family: 'Caveat', cursive; */
+/* } */
 
-.polaroid {
+/* .polaroid {
     background-color: white;
     padding: 10px 10px 3em 10px;
 }
 
 .polaroid {
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
-}
+} */
 
 figcaption {
+    color: var(--gray90);
+}
+
+
+.photos-width {
+    max-width: 1200px;
+}
+
+/* this isn't the prettiest thing in the world but it will be quickly updatable without too much hassle */
+
+.modern {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.modern img {
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modern .credit {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+    text-align: right;
     color: var(--gray70);
 }
 
@@ -215,7 +252,52 @@ figcaption {
     justify-content: space-evenly;
 }
 
-.box-link {
+.photo-teaser {
+    max-width: 600px;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+}
+
+.photo-teaser img {
+    display: block;
+    width: 100%;
+}
+
+.flex-text-teaser {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.photo-teaser-container h3 {
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 0;
+}
+
+.button {
+    align-self: flex-end;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.button a {
+    text-decoration: none;
+    color: var(--cream);
+    display: block;
+    padding: 10px 15px;
+    background-color: var(--idsred);
+}
+
+.button a:hover {
+    background-color: #5f0000;
+}
+
+/* uncomment styles below for a box link to another page with an image in the background */
+
+/* .box-link {
     background-image: url(../images/cyclist-a.jpg);
     background-size: cover;
     width: 600px;
@@ -251,7 +333,7 @@ figcaption {
     text-decoration: none;
 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+} */
 
 .live-updates {
     border-left: 2px solid var(--idsred);
@@ -361,7 +443,7 @@ table tr:nth-child(odd) {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    background-color: var(--idsred);
+    background-color: darkred;
     color: var(--cream);
     border-bottom: 2px dashed var(--cream);
 }
@@ -447,6 +529,27 @@ table tr:nth-child(odd) {
 .story-box:last-child {
     border-bottom: none;
 }
+
+.story-box-lg {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2em;
+    padding: 2em;
+}
+
+.story-box-lg .story-text-flex {
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.story-box-lg .author {
+    font-size: 18px;
+}
+
+.story-box-home {
+    padding: 4rem 0;
+}
+
 
 .story-text-flex {
     display: flex;
