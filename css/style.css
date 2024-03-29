@@ -129,10 +129,9 @@ header {
 }
 
 .black-box p {
-    justify-self: flex-end;
-    align-self: flex-end;
-    padding-top: 6rem;
-    padding-right: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
     color: var(--cream);
 }
 
@@ -168,7 +167,7 @@ main {
 
 article {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row-reverse wrap;
     gap: 2rem;
 }
 
@@ -580,4 +579,83 @@ table tr:nth-child(odd) {
 .author a:hover {
     border-bottom: 1px solid var(--idsred);
     color: var(--idsred);
+}
+
+@media screen and (max-width: 600px) {
+
+    /* I want the mobile nav to turn into an accordion menu at either mobile or tablet breakpoint. 
+    Will take more dedicated time to focus on that which I can't do right now. */
+
+    /* Navbar is currently disappearing on scroll. (only on home)  will need to fix/figure out why */
+
+    /* Background images will need to have position adjusted for mobile, but as these are placeholders
+    it is not the most pressing thing in the world. */
+
+    .black-box h1 {
+        font-size: 48px;
+    }
+
+    .black-box h2 {
+        font-size: 24px;
+    }
+
+    .byline-bar {
+        padding: 1rem;
+    }
+
+    .byline-bar p {
+        font-size: 14px;
+    }
+
+    main,
+    .photos-width {
+        max-width: 500px;
+        margin: 1rem 1rem 3rem;
+    }
+
+    .photos-width {
+        margin-top: 1rem;
+    }
+
+    section {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .story-box-home {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 1em;
+        padding: 0 0 3rem;
+    }
+
+    .story-box-lg .story-text-flex {
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .story-box-lg .author {
+        font-size: 16px;
+    }
+
+    .photo-teaser {
+        flex-flow: column nowrap;
+        margin: 0 2rem;
+    }
+
+    .live-updates {
+        border-left: none;
+        border-top: 2px solid #990000;
+        margin-top: 1rem;
+    }
+
+    .race-time {
+        border-bottom: none;
+        padding: 1rem 0 0;
+    }
+
+    .team-rosters {
+        flex-flow: column nowrap;
+    }
 }
