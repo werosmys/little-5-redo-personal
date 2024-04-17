@@ -13,6 +13,7 @@
     --gray80: rgb(51, 51, 51);
     --gray90: rgb(26, 26, 26);
     --cream: rgb(249, 245, 240);
+    --nav-height: 57.422px;
 }
 
 body {
@@ -25,7 +26,6 @@ p {
 }
 
 nav {
-    font-family: sans-serif;
     font-size: 16px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
@@ -33,29 +33,30 @@ nav {
     top: 0;
     left: 0;
     z-index: 1;
-    height: fit-content;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    height: var(--nav-height);
+    color: var(--cream);
 }
 
-.logo {
-    font-weight: bold;
-}
-
-nav ol {
+nav ul {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
+    gap: none;
     margin: 0;
     padding: 0;
+    height: var(--nav-height);
+    color: var(--cream);
 }
 
-nav li {
+nav ul li {
     list-style-type: none;
+    color: var(--cream);
 }
 
-nav a {
+nav ul li a {
     text-decoration: none;
     color: var(--cream);
     display: block;
@@ -65,7 +66,17 @@ nav a {
 
 nav a:hover {
     background-color: #990000;
+    /* this hover effect leaves the very slightest sliver of black still and idk how to override it. */
     transition: background-color 0.5s ease;
+    color: var(--cream);
+}
+
+nav li a:visited {
+    color: var(--cream);
+}
+
+nav .logo a:hover {
+    background-color: transparent;
 }
 
 header {
@@ -240,8 +251,7 @@ figcaption {
 }
 
 .modern .credit {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     margin-bottom: 0.5rem;
     text-align: right;
     color: var(--gray70);
@@ -271,7 +281,6 @@ figcaption {
 
 .photo-teaser-container h3 {
     font-size: 24px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 0;
 }
 
@@ -288,6 +297,7 @@ figcaption {
     display: block;
     padding: 10px 15px;
     background-color: var(--idsred);
+    border-bottom: none;
 }
 
 .button a:hover {
@@ -307,14 +317,12 @@ figcaption {
 
 .box-link h3 {
     font-size: 38px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     padding: 10px;
     margin: 10px 0 0 10px;
 }
 
 .blurb {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 0 10px;
     margin: 0 0 0 10px;
 }
@@ -330,8 +338,6 @@ figcaption {
 .button a {
     color: var(--cream);
     text-decoration: none;
-
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 } */
 
 .live-updates {
@@ -342,13 +348,11 @@ figcaption {
 
 .live-updates h3 {
     font-size: 32px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 .race-time {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-bottom: 10px;
     border-bottom: 2px solid var(--idsred);
     margin-bottom: 10px
@@ -356,6 +360,12 @@ figcaption {
 
 .bold {
     font-weight: bold;
+}
+
+.center {
+    max-width: 600px;
+    margin: 1rem auto;
+    padding: 0 1rem;
 }
 
 .race-time p {
@@ -381,7 +391,6 @@ figcaption {
 
 .terms-to-know h3 {
     font-size: 38px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 1em 0 0;
     padding-bottom: 0.5em;
     border-bottom: 2px solid var(--idsred);
@@ -444,12 +453,14 @@ table tr:nth-child(odd) {
     align-items: center;
     background-color: darkred;
     color: var(--cream);
-    border-bottom: 2px dashed var(--cream);
+    border-bottom: 1px solid var(--cream);
 }
 
-.accordion:first-child {
-    border-top: 2px dashed var(--cream);
+.accordion-button:last-child {
+    border-bottom: none;
 }
+
+/* this is not working */
 
 .active,
 .accordion:hover {
@@ -487,7 +498,6 @@ table tr:nth-child(odd) {
 }
 
 .team-rosters h4 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 32px;
     text-align: center;
     margin: 0 0 1em;
@@ -495,7 +505,6 @@ table tr:nth-child(odd) {
 
 .recent-updates h3 {
     font-size: 32px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
 }
 
@@ -512,7 +521,6 @@ table tr:nth-child(odd) {
 
 .more-coverage h3 {
     font-size: 32px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 1em 0 0;
 }
 
@@ -520,7 +528,6 @@ table tr:nth-child(odd) {
     display: flex;
     gap: 2em;
     flex-flow: row nowrap;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 2em 0;
     border-bottom: 2px solid var(--idsred);
 }
@@ -538,7 +545,6 @@ table tr:nth-child(odd) {
 
 .story-box-lg .story-text-flex {
     font-size: 24px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .story-box-lg .author {
@@ -582,11 +588,6 @@ table tr:nth-child(odd) {
 }
 
 @media screen and (max-width: 600px) {
-
-    /* I want the mobile nav to turn into an accordion menu at either mobile or tablet breakpoint. 
-    Will take more dedicated time to focus on that which I can't do right now. */
-
-    /* Navbar is currently disappearing on scroll. (only on home)  will need to fix/figure out why */
 
     /* Background images will need to have position adjusted for mobile, but as these are placeholders
     it is not the most pressing thing in the world. */
@@ -632,11 +633,19 @@ table tr:nth-child(odd) {
 
     .story-box-lg .story-text-flex {
         font-size: 20px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 
     .story-box-lg .author {
         font-size: 16px;
+    }
+
+    .story-box,
+    .story-box-lg {
+        flex-flow: column nowrap;
+    }
+
+    .story-box img {
+        align-self: center;
     }
 
     .photo-teaser {
@@ -657,5 +666,9 @@ table tr:nth-child(odd) {
 
     .team-rosters {
         flex-flow: column nowrap;
+    }
+
+    .button a {
+        font-size: 12px;
     }
 }
